@@ -1,20 +1,42 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="th">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>Spoon-Knife</title>
-  <LINK href="styles.css" rel="stylesheet" type="text/css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard หุ้นตัวอย่าง</title>
+  <link href="styles.css" rel="stylesheet">
 </head>
-
 <body>
-
-<img src="forkit.gif" id="octocat" alt="" />
-
-<!-- Feel free to change this text here -->
-<p>
-  Fork me? Fork you, @octocat!
-</p>
-
+  <main>
+    <header>
+      <p class="eyebrow">STOCK DASHBOARD</p>
+      <h1>ภาพรวมพอร์ตหุ้น</h1>
+      <p>ข้อมูลสมมติสำหรับสาธิตหน้า Dashboard ไม่ใช่ราคาตลาดจริงหรือคำแนะนำการลงทุน</p>
+    </header>
+    <section aria-labelledby="overview-title">
+      <h2 id="overview-title">สรุปพอร์ตตัวอย่าง</h2>
+      <div class="metrics">
+        <article><h3>มูลค่าพอร์ต</h3><p class="value">฿125,000</p></article>
+        <article><h3>ต้นทุนรวม</h3><p class="value">฿120,000</p></article>
+        <article><h3>กำไรที่ยังไม่รับรู้</h3><p class="value positive">+฿5,000 <small>(+4.17%)</small></p></article>
+      </div>
+    </section>
+    <section aria-labelledby="holdings-title">
+      <h2 id="holdings-title">หุ้นในพอร์ต</h2>
+      <div class="table-scroll" tabindex="0" role="region" aria-label="ตารางหุ้น เลื่อนแนวนอนได้">
+        <table>
+          <caption>ราคาตัวอย่าง หน่วยราคาและมูลค่าเป็นบาท</caption>
+          <thead><tr><th scope="col">หุ้น</th><th scope="col">จำนวนหุ้น</th><th scope="col">ต้นทุนต่อหุ้น</th><th scope="col">ราคาตัวอย่าง</th><th scope="col">มูลค่า</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">DEMO-A</th><td>1,000</td><td>45.00</td><td>50.00</td><td>50,000</td></tr>
+            <tr><th scope="row">DEMO-B</th><td>500</td><td>84.00</td><td>80.00</td><td>40,000</td></tr>
+            <tr><th scope="row">DEMO-C</th><td>1,000</td><td>33.00</td><td>35.00</td><td>35,000</td></tr>
+          </tbody>
+          <tfoot><tr><th scope="row" colspan="4">มูลค่ารวม</th><td>125,000</td></tr></tfoot>
+        </table>
+      </div>
+    </section>
+    <footer><p>หน้าเว็บสาธิตแบบ Static · ไม่มีการเชื่อมต่อบัญชีซื้อขายหรือ API ภายนอก</p></footer>
+  </main>
 </body>
 </html>

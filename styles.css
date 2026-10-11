@@ -1,17 +1,24 @@
-* {
-  margin:0px;
-  padding:0px;
-}
-
-#octocat {
-  display: block;
-  width:384px;
-  margin: 50px auto;
-}
-
-p {
-  display: block;
-  width: 400px;
-  margin: 50px auto;
-  font: 30px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
-}
+* { box-sizing: border-box; }
+body { margin: 0; background: #f4f7fb; color: #18283c; font-family: system-ui, sans-serif; line-height: 1.6; }
+main { max-width: 1080px; margin: auto; padding: 48px 24px; }
+header { margin-bottom: 36px; }
+h1 { font-size: clamp(1.8rem, 5vw, 2.8rem); margin: 8px 0; }
+h2 { font-size: 1.35rem; }
+h3 { font-size: 1rem; margin-top: 0; color: #4a5d73; }
+.eyebrow { color: #365f94; font-weight: 700; letter-spacing: .12em; }
+.metrics { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+article, .table-scroll { background: white; border: 1px solid #dce3ed; border-radius: 12px; }
+article { padding: 24px; }
+.value { font-size: 1.7rem; font-weight: 700; margin: 0; }
+.value small { display: block; font-size: 1rem; }
+.positive { color: #167047; }
+section { margin-bottom: 32px; }
+.table-scroll { overflow-x: auto; }
+.table-scroll:focus-visible { outline: 3px solid #365f94; outline-offset: 3px; }
+table { border-collapse: collapse; width: 100%; white-space: nowrap; }
+caption { text-align: left; padding: 16px; color: #4a5d73; }
+th, td { padding: 16px; text-align: right; border-top: 1px solid #dce3ed; }
+th:first-child { text-align: left; }
+thead, tfoot { background: #edf2f8; }
+footer { color: #4a5d73; font-size: .9rem; }
+@media (max-width: 700px) { .metrics { grid-template-columns: 1fr; } main { padding: 24px 16px; } }
